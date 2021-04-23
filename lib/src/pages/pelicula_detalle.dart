@@ -20,6 +20,7 @@ class PeliculaDetalle extends StatelessWidget {
           ),
           _posterTitulo(pelicula, context),
           _description(pelicula),
+          _reparto(context),
           _crearCasting(pelicula)
         ]))
       ],
@@ -101,6 +102,12 @@ class PeliculaDetalle extends StatelessWidget {
         textAlign: TextAlign.justify,
       ),
     );
+  }
+
+  Widget _reparto(BuildContext context) {
+    return Container(
+        padding: EdgeInsets.only(left: 10.0, bottom: 10.0),
+        child: Text('Reparto: ', style: Theme.of(context).textTheme.bodyText1));
   }
 
   Widget _crearCasting(Pelicula pelicula) {
