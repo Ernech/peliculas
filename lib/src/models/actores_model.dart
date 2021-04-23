@@ -1,5 +1,4 @@
 class Cast {
-  //Clase cast
   List<Actor> actores = new List();
   Cast.fromJsonList(List<dynamic> jsonList) {
     if (jsonList == null) {
